@@ -10,24 +10,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <!-- <link rel="stylesheet" href="./css/"> -->
+
+<link rel="stylesheet" href="/css/fontawesome-free-6.0.0-web/css/all.css">
 </head>
 <body>
     <header>
-        <div class="logo-icon">
+        <nav >
+<div class="logo-icon">  
         <h1 class="logo">E.O. IYIOLA</h1>  
         <ion-icon name="menu" class="icon"></ion-icon>  
         </div>  
         
-<div class="side_bar"><ul>
+<div class="side_bar">
+<div>
     <ion-icon  id="caret-up"  class="icon" name="close-sharp"></ion-icon>
     <h1 class="logo">E.O. IYIOLA</h1>
-    <ul class="">
-    <li class="side-items"><a href=""> about</a></li>
-    <li class="side-items"><a href="">skills</a></li>
-    <li class="side-items"><a href="">project</a></li>
+    </div>
+
+
+    <ul class=" nav-menu">
+    <li class="side-items"><a href="#about"> about</a></li>
+    <li class="side-items"><a href="#skills">skills</a></li>
+    <li class="side-items"><a href="#project">project</a></li>
     <li class="side-items"><a href="">resume</a></li>
-    <li class="side-items"><a href="">contact</a></li>
+    <li class="side-items"><a href="#Contact">contact</a></li>
     </ul>
+
     <ul class="social-M">
         <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
         <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
@@ -37,7 +45,7 @@
     <!-- bottom nav -->
     
     </div>
-    <div class="bottom-nav">
+    <!-- <div class="bottom-nav">
         <ul>
     <ul class="">
     <li class="side-items nav-b"><a href=""> about</a></li>
@@ -46,11 +54,10 @@
     <li class="side-items nav-b"><a href="">resume</a></li>
     <li class="side-items nav-b"><a href="">contact</a></li>
     </ul>
+ -->
 
-</div> 
-
-<nav>
-    <!-- <div class="logo">E.O. IYIOLA</div> -->
+</nav>
+<!--     
 <ul>
 <li><a href=""> About</a></li>
 <li><a href="">skills</a></li>
@@ -58,28 +65,35 @@
 <li><a href="">resume</a></li>
 <li><a href="">contact</a></li>
 </ul>
-</nav>
+</nav>  -->
 
 
 <div class="header-box">
-    
+    <div>
 <h1>I'm a front-end <br> developer </h1>
 <p>your web page is as good as you want it and even more</p>
 </div>
 
-<button class="btn-contact"> <a href="" class="btn-contact">My portfolio  </a></button>
-<div class="design"></div>
-<button ><a href="" >contact Me</a></button>
+<div class="btn-Container">
+<button class="btn-portfolio"> <a href="" >My portfolio  </a></button>
+
+<button class="btn-contact"><a href="" >contact Me</a></button>
+</div>
+</div>
     </header>
 
 
-<section class="about">
+<section class="about" id="about">
     <div class="centerDiv">
     <h2>About me</h2>
-    <p>My name is IYIOLA OLAKUNLE ELIJAH. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, deleniti? Repudiandae ea obcaecati ipsum rerum vel est, corporis sint corrupti architecto inventore provident quibusdam iure nihil natus voluptatum aut sequi? </p>
+    <p>My name is IYIOLA OLAKUNLE ELIJAH. Lorem ipsum dolor
+         sit amet consectetur adipisicing elit. A, deleniti? 
+         Repudiandae ea obcaecati ipsum rerum vel est, corporis 
+         sint corrupti architecto inventore provident quibusdam
+          iure nihil natus voluptatum aut sequi? </p>
 </div>
 
-<div class="a">
+<div class="name-image">
 <img src="/img/bg1.jpg" alt="">
 <div class="img-box">
 
@@ -90,32 +104,43 @@
 </div>
 </section>
 
-<section >
+<section class="languages" id="skills">
    
     <h2>what i am good at</h2>
-<div class="skills">
 
-<div class="tools" >
+<div class="skills">
+ 
+ <div class="tools" > 
     <h3>HTML</h3>
     <div >
-    <img src="/img/html-logo.png">
+    <i class="fa-brands fa-html5"></i>
     <progress class="file" value="90" max="100">  </progress>
     </div>
-</div>
+</div> 
 
 <div class="tools">
     <h3>CSS</h1>
+
         <div>
-            <img src="/img/javascript-39419.png">
+        <i class="fa-brands fa-css3-alt"></i>
     <progress class="file" value="90" max="100"> </progress>
 </div>
 </div>
 
-<div class="tools">
+    <div class="tools">
     <h3>JAVASCRIPT</h3>
-    
-        <div>
-            <img src="/img/javascript-39419.png">
+
+    <div>
+    <i class="fa-brands fa-js-square"></i>
+        <progress class="file" value="90" max="100"> </progress>
+    </div>
+</div>
+
+            <div class="tools">
+                <h3>React</h3>
+            
+                <div>
+        <i class="fa-brands fa-react"></i>
             <progress class="file" value="90" max="100"> </progress>
         </div>
 </div>
@@ -123,24 +148,25 @@
 </div>
 </section>
 
-<section>
+<section class="projects" id="project">
     <h2>my project</h2>
 
     <div class="project"> 
-        <div></div>
-    <div></div>
-    <div></div>
+        <div class="prj"></div>
+    <div class="prj"></div>
+    <div class="prj"></div>
 </div>
 </section>
 
-<section class="contact">
-    <p></p>
+<section class="contact" id="Contact">
+    <div class="Contacth2">
 <h2>contact</h2>
+</div>
 <ul>
     <li>phone Number: 08183435263</li>
-<li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
-<li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
-<li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+<li><a href=""><ion-icon name="logo-facebook"></ion-icon> facebook</a></li>
+<li><a href=""><ion-icon name="logo-linkedin"></ion-icon> linkding</a></li>
+<li><a href=""><ion-icon name="logo-twitter"></ion-icon>twitter</a></li>
 </ul>
 </section>
     <!-- ioniucons -->

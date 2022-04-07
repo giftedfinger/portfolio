@@ -4,7 +4,7 @@ const sideBar = document.querySelector('.side_bar')
 
 for ( icons of icon){
     icons.addEventListener('click', () =>{
-        sideBar.style.transition="all 6s";
+        // sideBar.style.transition="all .6s";
     sideBar.classList.toggle('sideBar-toggle')
   
 
