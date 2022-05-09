@@ -17,7 +17,7 @@ html{
     font-family:'poppins',sans-serif ;
 font-size:0.625rem;
     color: rgb(27, 27, 27);
-    background-color: #f5f5f5;
+  
     line-height: 1.6rem;
     
 }
@@ -63,6 +63,7 @@ p{
 
 ul li{
     list-style: none;
+  
 }
 
 /* header------------- */
@@ -76,91 +77,124 @@ background-size: cover;
 min-width: 90vw;
 }
 
+.logo-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+ color: #fff;
+ font-size: 1.5rem;
+    top: 3%;
+    width: 90%;
+    font-weight: 300;
+
+}
+
+
+.hambuger{
+    font-size: 2em
+}
+
+
 
 /* side bar and nav for desktop */
 
-nav .side_bar{
-    width: 0%;
-    height: 100vh;
+nav .dropdown{
+    width: 0;
+    height: 0vh;
     box-shadow: -1px 10px 13px 1px rgba(13,11,11,0.6);
     -webkit-box-shadow: -1px 10px 13px 1px rgba(13,11,11,0.4);
     -moz-box-shadow: -1px 10px 13px 1px rgba(13,11,11,0.3);
      background-color:#f1f1f1;
     transition: All .4s;
-    opacity: 0.5;
-    visibility: hidden;
     z-index: 1;
-    position: relative;
-    /* bottom:16%; */
-
-    
+    position: absolute;
+ visibility: hidden;
+    margin-top: 15%;
+    left: 0;
+      
 }
 
 
-nav .sideBar-toggle{
+nav .dropdownDisplay {
     visibility: visible;
     width: 100%;
-height:100vh;
-opacity: 1;
+    height: 100vh;
+    opacity: 1;
 }
 
-.side_bar h1{
+.dropdown .nav-menu{
+    position: relative;
+    
+
+}
+
+
+
+
+/* .side_bar h1{
     margin-top: 4rem;
     color: rgb(0, 128, 129);
     text-align: center;
 
-}
+} */
 
-nav .side_bar  ul li a{
+
+
+nav ul li a{
     display: flex;
-  margin:5rem 0;
+  margin:1rem 0;
     padding: 10px;
     position:relative;
     text-transform: capitalize;
     left: 45px;
     color:rgb(0, 128, 129) ;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 3rem;
     letter-spacing: 2px;
+    margin-top: 2em;
+    ;
     
 }
 
 
 
-.side_bar  #caret-up{
+/* .side_bar  #caret-up{
     color:rgb(241, 158, 2)  ;
     display: inline-block;
     position: relative;
     left:85%;
     top:4rem;   
     font-size: 2rem;
-}
+} */
 
-
+/* 
 .side_bar #caret-up:hover{
     transform: translate(3%);
     color: #413d3e;
 }
+*/
 
-
-     .social-M{
+ .social-M{
     display: flex;
     justify-content: space-evenly;
     position: relative;
     right: 50px;
     margin-top: 10px;
-    font-size: 4rem;
+    font-size: 6rem;
     padding-bottom: 10px;
+    position: relative;
+    top: 0%;
 }
 
 
-
+/*
 .bottom-nav ul li ,.bottom-nav ul li:active{
     display: inline-block;
     justify-content: space-between;
     padding-left:2% ; 
     
-}
+} */
 
 /* -----------.bottom-nav ul li:link{
     background-color: black;
@@ -176,24 +210,13 @@ header{
 }
 
 
- header .logo{
+ /* nav .logo{
     font-family: 'poppins';
     font-weight: 700;
     font-size: 1.8rem;
-}
+} */
 
 
-   header .logo-icon {
-       display: flex;
-       justify-content: space-between;
-  align-items:  center;
-       font-size: 3rem;
-       color: #f1f1f1;
-       position: absolute;
-    top: 3%;
-    width: 90%;
-     
-   }
 
 
 /* .header-box{
@@ -615,21 +638,104 @@ text-align: center;
 
 }
 
-@media screen and (min-width:768px) and (max-width: 1024px) {
+@media screen and (min-width:768px) {
+
+/* nav */
+
+nav .side_bar {
+    width: 50%;
+background-color: transparent;
+    transition: All .4s;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    position: relative;
+    /* bottom:16%; */
+box-shadow: -1px 10px 13px 1px transparent;
+-webkit-box-shadow: -1px 10px 13px 1px transparent;
+-moz-box-shadow: -1px 10px 13px 1px transparent;
+transition: All .4s;
+}
+
+
+.side-bar-logo .icon{
+    display: none;
+    background-color: ;
+}
+
+
+.side-bar-logo {
+    display: flex;
+    background-color: #f1f1f1;
+}
+nav{
+    border: 1px solid #f1f1f1;
+    height: 10vh;
+}
+
+.nav-menu{
+    display: flex;
+    visibility: visible;
+}
+
+nav .side_bar ul li a {
+    display: flex;
+    color: #fff;
+ z-index: 1;
+ /* background: red; */
+
+}
+
+
+/* .social-M{
+    display: none;
+} */
+
+
+
     .header-box{
-        position: absolute;
+        position: none;
         top:30%;
         left: 20%;
         transform: translate(-50%,-50%);
- 
-    
     }
 
     .about{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         grid-gap: 5.9%;
+     
     }
+    .about .name-image{
+        border: 1px solid yellow;
+       
+    }
+    .about p {
+        padding: 20px;
+        border: 1px solid red;
+    }
+
+  
+.name-image::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 25%;
+    right: -3%;
+
+    /* width: 25vh;
+    height: 30.5vh; */
+ 
+
+}
+.about img {
+    width: 100%;
+    height: 40vh;
+    border-radius: 50%;
+  
+
+
+}
 
 }
 

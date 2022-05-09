@@ -1,17 +1,33 @@
 
-const icon = document.querySelectorAll('.icon')
-const sideBar = document.querySelector('.side_bar')
+const icon = document.querySelector('.hambuger')
+const dropdown = document.querySelector('.dropdown');
+console.log(icon)
 
-for ( icons of icon){
-    icons.addEventListener('click', () =>{
-        // sideBar.style.transition="all .6s";
-    sideBar.classList.toggle('sideBar-toggle')
-  
 
+icon.addEventListener('click', ()=> {
+    console.log(icon)
+        if (dropdown.contains!='dropdownDisplay'){
+        dropdown.classList.toggle('dropdownDisplay');
+
+            icon.classList.toggle("reorder-three-outline");
+                // < ion - icon name = "reorder-three-outline" ></ion - icon >
+        }
 })
 
-}
+//     icon.addEventListener('click', ()=>{
+//         // sideBar.style.transition="all .6s";
+        
+//    
+// })
 
+let body=document.getElementsByTagName('body');
+
+function size(el){
+    let clientSize = el.getBoundingClientRect();
+    let height = clientSize.height;
+    console.log(height)
+}
+size(body)
 const projects=[{
     id:1,
     img:"rtrtyfg",
@@ -60,9 +76,7 @@ const previous = document.querySelector('.btn-pre')
 let currentProject=3;
 
 window.addEventListener("DOMContentLoaded", ()=>{
-    showProject()
-
-    
+    showProject()   
 })
 
 
